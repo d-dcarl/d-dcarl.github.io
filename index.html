@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮Carl Kingston Portfolio</title>
+    <link rel="stylesheet" href="src/scss/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="src/js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="logo">
+            <h3>CARL KINGSTON</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="dropdown-content">
+                        <a href="src/projects/dungeon-crawler.html">Dungeon Crawler</a>
+                        <a href="src/projects/puzzle-platformer.html">Puzzle Platformer</a>
+                        <a href="src/projects/narrative-adventure.html">Narrative Adventure</a>
+                        <a href="src/projects/index.html">All Projects</a>
+                    </div>
+                </li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <section id="hero" class="section">
+        <div class="hero-content">
+            <h1>CARL <span class="accent">KINGSTON</span></h1>
+            <h2>Creating immersive gaming experiences</h2>
+            <p>Level design • Game mechanics • Player experience • UI/UX</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <img src="src/images/1694402890509.png" alt="Carl Kingston profile photo" class="profile-image">
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Passionate Game Designer</h3>
+                <p>I'm an aspiring game designer with a strong foundation in level design, gameplay mechanics, and
+                    player experience. My passion for games started at an early age, and I've dedicated my education and
+                    personal projects to understanding what makes games engaging and meaningful.</p>
+                <p>With a background in production, design, and tech art, I bring a holistic approach to game
+                    development - balancing creative vision with practical execution.</p>
+                <p>I am seeking an entry-level position at a world-class game studio where I can contribute my skills
+                    while learning from industry leaders.</p>
+                <div class="about-details">
+                    <div class="detail">
+                        <h4>Education</h4>
+                        <p>MA Entertainment Arts and Engineering University of Utah, 2024</p>
+                    </div>
+                    <div class="detail">
+                        <h4>Location</h4>
+                        <p>Salt Lake City, Utah</p>
+                    </div>
+                </div>
+                <a href="src/files/resume.pdf" class="btn secondary download-btn"
+                    download="Carl_Kingston_Resume.pdf">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-placeholder">Project 1</div>
+                </div>
+                <div class="project-info">
+                    <h3>Dungeon Crawler Prototype</h3>
+                    <p>A procedurally generated dungeon crawler with unique combat mechanics and progression systems.
+                    </p>
+                    <div class="project-tags">
+                        <span>Level Design</span>
+                        <span>Unity</span>
+                        <span>Procedural Generation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="src/projects/dungeon-crawler.html" class="btn small">View Details</a>
+                        <a href="#" class="link-icon">Github</a>
+                        <a href="#" class="link-icon">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-placeholder">Project 2</div>
+                </div>
+                <div class="project-info">
+                    <h3>Puzzle Platformer</h3>
+                    <p>A 2.5D puzzle platformer featuring innovative mechanics and environmental storytelling.</p>
+                    <div class="project-tags">
+                        <span>Game Mechanics</span>
+                        <span>Level Design</span>
+                        <span>Unreal Engine</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="src/projects/puzzle-platformer.html" class="btn small">View Details</a>
+                        <a href="#" class="link-icon">Github</a>
+                        <a href="#" class="link-icon">Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="image-placeholder">Project 3</div>
+                </div>
+                <div class="project-info">
+                    <h3>Narrative Adventure</h3>
+                    <p>A branching narrative game with meaningful player choices and multiple endings.</p>
+                    <div class="project-tags">
+                        <span>Narrative Design</span>
+                        <span>UI/UX</span>
+                        <span>Twine</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="src/projects/narrative-adventure.html" class="btn small">View Details</a>
+                        <a href="#" class="link-icon">Github</a>
+                        <a href="#" class="link-icon">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-projects">
+            <a href="src/projects/index.html" class="btn primary">View All Projects</a>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-content">
+            <div class="skills-category">
+                <h3>Design Skills</h3>
+                <ul class="skills-list">
+                    <li>Level Design</li>
+                    <li>Game Mechanics</li>
+                    <li>Narrative Design</li>
+                    <li>Player Experience</li>
+                    <li>Balancing & Tuning</li>
+                    <li>Game Documentation</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <ul class="skills-list">
+                    <li>Unreal Engine</li>
+                    <li>Blueprint</li>
+                    <li>Source Control (Git, Perforce)</li>
+                    <li>3D Modeling</li>
+                    <li>Texturing</li>
+                    <li>Animation</li>
+                    <li>Vector Illustration</li>
+                    <li>Music Production</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <ul class="skills-list">
+                    <li>Maya</li>
+                    <li>zBrush</li>
+                    <li>Substance Painter</li>
+                    <li>Jira</li>
+                    <li>Notion</li>
+                    <li>Miro</li>
+                    <li>Adobe Creative Suite</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul class="skills-list">
+                    <li>Collaborative Teamwork</li>
+                    <li>Creative Problem Solving</li>
+                    <li>Clear Communication</li>
+                    <li>Adaptability</li>
+                    <li>Playtesting & Feedback</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm currently looking for entry-level game design opportunities. Feel free to reach out if you'd like
+                    to discuss potential collaborations or if you have any questions.</p>
+                <div class="contact-links">
+                    <div class="contact-link">
+                        <span class="icon">📧</span>
+                        <a href="mailto:dcarl.ips@gmail.com">dcarl.ips@gmail.com</a>
+                    </div>
+                    <div class="contact-link">
+                        <span class="icon">🔗</span>
+                        <a href="https://www.linkedin.com/in/carl-kingston-08245b123/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-link">
+                        <span class="icon">🎮</span>
+                        <a href="https://artstation.com/yourprofile" target="_blank">ArtStation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>CARL KINGSTON</h3>
+                <p>Creating immersive gaming experiences</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">ArtStation</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Carl Kingston. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
