@@ -296,11 +296,11 @@ function initImageModal() {
 
     // Collect image data
     galleryImages.forEach(item => {
-        const hiddenImg = item.querySelector('.hidden-image');
-        if (hiddenImg) {
+        const img = item.querySelector('img');
+        if (img) {
             images.push({
-                src: hiddenImg.getAttribute('src'),
-                alt: hiddenImg.getAttribute('alt')
+                src: img.getAttribute('src'),
+                alt: img.getAttribute('alt')
             });
         }
     });
