@@ -4,6 +4,7 @@ node_modules/
 .pnp.js
 
 # Build and dist files
+src/
 build/
 *.local
 
