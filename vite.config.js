@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     // Base public path when served in production
-    base: process.env.NODE_ENV === 'production' ? '/d-dcarl.github.io/' : '/',
+    base: '/d-dcarl.github.io/',
 
     // Configure the server
     server: {
