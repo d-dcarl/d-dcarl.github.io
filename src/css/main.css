@@ -367,6 +367,112 @@ header nav ul li a.active::after {
     margin-bottom: 0.25rem;
 }
 
+/* Portfolio Gallery Section */
+#portfolio {
+    background-color: rgba(151, 17, 50, 0.03);
+}
+
+.portfolio-header {
+    text-align: center;
+    max-width: 700px;
+    margin: -1rem auto 2.5rem;
+}
+
+.portfolio-intro {
+    color: rgba(51, 51, 51, 0.8);
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    background-color: white;
+    color: #333;
+    border: 2px solid #ddd;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #971132;
+    border-color: #971132;
+    color: #fff;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    position: relative;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-item:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
 /* Projects Section */
 #projects {
     background-color: rgba(151, 17, 50, 0.03);
@@ -652,6 +758,11 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+
     .skills-content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -672,6 +783,11 @@ footer {
 
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
     }
 
     .skills-content {

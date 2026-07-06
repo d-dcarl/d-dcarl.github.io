@@ -25,6 +25,7 @@
         <nav>
             <ul>
                 <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li class="dropdown">
                     <a href="#projects" class="nav-link">Projects</a>
@@ -52,12 +53,121 @@
             <h2>Creating Immersive Gaming Experiences</h2>
             <p>Level design • Game mechanics • Player experience • UI/UX</p>
             <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#portfolio" class="btn primary">View Portfolio</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
         </div>
         <div class="hero-visual">
             <canvas id="hero-canvas"></canvas>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2 class="section-title">Portfolio Gallery</h2>
+        <div class="portfolio-header">
+            <p class="portfolio-intro">A quick visual overview of my game design, level design, and 3D art work — click any
+                image to view full size.</p>
+            <div class="portfolio-actions">
+                <a href="src/files/Resume2.6.pdf" class="btn primary" download="Carl_Kingston_Resume.pdf">Download
+                    Resume</a>
+                <a href="#projects" class="btn secondary">View Project Write-ups</a>
+            </div>
+        </div>
+        <div class="portfolio-filters" role="tablist" aria-label="Filter portfolio by category">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="filter-btn" data-filter="games" role="tab" aria-selected="false">Game Projects</button>
+            <button class="filter-btn" data-filter="levels" role="tab" aria-selected="false">Level Design</button>
+            <button class="filter-btn" data-filter="art" role="tab" aria-selected="false">3D Art</button>
+        </div>
+        <div class="portfolio-grid">
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="0">
+                <img src="src/images/hookfall/UWBSxt.jpg" alt="Hook Fall — grappling platformer gameplay" loading="lazy">
+                <figcaption>Hook Fall</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="1">
+                <img src="src/images/hookfall/8Gi2ch.jpg" alt="Hook Fall — level environment" loading="lazy">
+                <figcaption>Hook Fall</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="2">
+                <img src="src/images/hookfall/pf4Ots.jpg" alt="Hook Fall — platforming section" loading="lazy">
+                <figcaption>Hook Fall</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="3">
+                <img src="src/images/hookfall/J9G8Ay.jpg" alt="Hook Fall — level detail" loading="lazy">
+                <figcaption>Hook Fall</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="4">
+                <img src="src/images/VREDSIM/vlcsnap-2025-07-16-06h28m40s435.png"
+                    alt="VREDSIM — VR classroom simulation" loading="lazy">
+                <figcaption>VREDSIM</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="5">
+                <img src="src/images/VREDSIM/vlcsnap-2025-07-16-06h36m36s687.png"
+                    alt="VREDSIM — teacher training scenario" loading="lazy">
+                <figcaption>VREDSIM</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="6">
+                <img src="src/images/VREDSIM/vlcsnap-2025-07-16-06h44m23s091.png"
+                    alt="VREDSIM — classroom interaction" loading="lazy">
+                <figcaption>VREDSIM</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="7">
+                <img src="src/images/skyline/IMG_2482.png" alt="Project Skyline — mobile UI design" loading="lazy">
+                <figcaption>Project Skyline</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="games" data-index="8">
+                <img src="src/images/skyline/IMG_2483.png" alt="Project Skyline — gameplay screen" loading="lazy">
+                <figcaption>Project Skyline</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="9">
+                <img src="src/images/L_CliffLevel.0003.png" alt="Cliff level design — overview" loading="lazy">
+                <figcaption>Level Design</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="10">
+                <img src="src/images/L_CliffLevel.0004.png" alt="Cliff level design — detail" loading="lazy">
+                <figcaption>Level Design</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="11">
+                <img src="src/images/L_Summon.0004.png" alt="Summon level — layout" loading="lazy">
+                <figcaption>Level Design</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="12">
+                <img src="src/images/ExteriorSnow-scaled.jpg" alt="Exterior environment — snow scene" loading="lazy">
+                <figcaption>Environment</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="13">
+                <img src="src/images/frontnight-scaled.jpg" alt="Environment — night exterior" loading="lazy">
+                <figcaption>Environment</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="levels" data-index="14">
+                <img src="src/images/FrontStylized_000.png" alt="Stylized environment concept" loading="lazy">
+                <figcaption>Environment</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="art" data-index="15">
+                <img src="src/images/carl-kingston-materialcubes.jpg" alt="Material study — texture cubes" loading="lazy">
+                <figcaption>3D Art</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="art" data-index="16">
+                <img src="src/images/carl-kingston-sm-sword-lambert1-basecoloruvs.jpg"
+                    alt="Sword asset — base color and UVs" loading="lazy">
+                <figcaption>3D Art</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="art" data-index="17">
+                <img src="src/images/carl-kingston-sm-sword-lambert1-maps.jpg" alt="Sword asset — texture maps"
+                    loading="lazy">
+                <figcaption>3D Art</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="art" data-index="18">
+                <img src="src/images/d-carl-kingston-nightlightsketch.jpg" alt="Night light environment sketch"
+                    loading="lazy">
+                <figcaption>Concept Art</figcaption>
+            </figure>
+            <figure class="portfolio-item gallery-image" data-category="art" data-index="19">
+                <img src="src/images/carl-kingston-final01postlogo.jpg" alt="Character render — final composite"
+                    loading="lazy">
+                <figcaption>3D Art</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -283,6 +393,7 @@
             </div>
             <div class="footer-links">
                 <a href="#hero">Home</a>
+                <a href="#portfolio">Portfolio</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
@@ -297,6 +408,20 @@
             <p>&copy; 2025 Carl Kingston. All rights reserved.</p>
         </div>
     </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="Portfolio image">
+            </div>
+            <div class="modal-navigation">
+                <button class="modal-prev" aria-label="Previous image">&larr;</button>
+                <button class="modal-next" aria-label="Next image">&rarr;</button>
+            </div>
+            <div class="modal-caption"></div>
+        </div>
+    </div>
 </body>
 
 </html>

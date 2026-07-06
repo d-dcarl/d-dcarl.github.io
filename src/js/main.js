@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initHeroCanvas();
     initContactForm();
     initImageModal();
+    initPortfolioFilter();
 });
 
 // Custom cursor
@@ -39,7 +40,7 @@ function initCursor() {
     });
 
     // Add hover effect for interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .project-card, input, textarea');
+    const interactiveElements = document.querySelectorAll('a, button, .project-card, .portfolio-item, .filter-btn, input, textarea');
 
     interactiveElements.forEach(element => {
         element.addEventListener('mouseenter', () => {
@@ -120,7 +121,7 @@ function initNavigation() {
 // GSAP animations
 function initAnimations() {
     // Fade in elements when scrolled into view
-    const fadeElements = document.querySelectorAll('.section-title, .about-content, .project-card, .skills-category, .contact-container');
+    const fadeElements = document.querySelectorAll('.section-title, .about-content, .portfolio-header, .portfolio-item, .project-card, .skills-category, .contact-container');
 
     fadeElements.forEach(element => {
         element.classList.add('fade-in');
@@ -368,4 +369,29 @@ function initImageModal() {
             modalCaption.textContent = images[index].alt;
         }
     }
+}
+
+function initPortfolioFilter() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    if (!filterBtns.length || !items.length) return;
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.dataset.filter;
+
+            filterBtns.forEach(b => {
+                b.classList.remove('active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
+
+            items.forEach(item => {
+                const show = filter === 'all' || item.dataset.category === filter;
+                item.classList.toggle('hidden', !show);
+            });
+        });
+    });
 } 
